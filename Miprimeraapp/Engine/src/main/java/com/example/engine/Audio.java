@@ -1,5 +1,5 @@
 package com.example.engine;
 
 public interface Audio {
-    Sound newSound();
+    Sound newSound(String filename);
 }
