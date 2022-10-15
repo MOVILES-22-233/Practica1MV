@@ -18,6 +18,11 @@ public class Input implements com.example.engine.Input, MouseListener {
     }
 
     @Override
+    public void addEvent(TouchEvent e) {
+        events.add(e);
+    }
+
+    @Override
     public void mouseClicked(MouseEvent mouseEvent) {
 
     }

@@ -1,4 +1,7 @@
-package com.example.pcengine;
+package com.example.androidengine;
+
+import android.content.res.AssetManager;
+
 import com.example.engine.Sound;
 
 import java.util.Vector;
@@ -8,19 +11,22 @@ public class Audio implements com.example.engine.Audio {
     private Vector<String> ids;
     private int size = 100;
 
-    public Audio() {
+    private AssetManager assetManager;
+
+    public Audio(AssetManager assetManager_) {
         super();
+        assetManager = assetManager_;
         sounds = new Vector<Sound>(size);
         ids = new Vector<String>(size);
     }
 
     @Override
     public Sound newSound(String filename) {
-        Sound clip = new com.example.pcengine.Sound(filename);
-        sounds.add(clip);
+        Sound mPlayer = new com.example.androidengine.Sound(filename, assetManager);
+        sounds.add(mPlayer);
         ids.add(filename);
 
-        return clip;
+        return mPlayer;
     }
 
     @Override

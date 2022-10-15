@@ -6,7 +6,6 @@ import com.example.engine.Image;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
 
 import javax.swing.JFrame;
 
