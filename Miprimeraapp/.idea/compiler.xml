@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel target="1.7">
+      <module name="Mi_primera_app.androidapplication" target="11" />
       <module name="Mi_primera_app.AndroidEngine" target="11" />
       <module name="Mi_primera_app.app" target="11" />
+      <module name="Mi_primera_app.PCApplication" target="1.8" />
+      <module name="Mi_primera_app.PCApplication.main" target="1.8" />
+      <module name="Mi_primera_app.PCApplication.test" target="1.8" />
+      <module name="Mi_primera_app.PCEngine" target="1.8" />
+      <module name="Mi_primera_app.PCEngine.main" target="1.8" />
+      <module name="Mi_primera_app.PCEngine.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

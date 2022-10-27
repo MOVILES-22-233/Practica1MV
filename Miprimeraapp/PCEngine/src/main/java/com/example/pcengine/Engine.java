@@ -4,7 +4,6 @@ import com.example.engine.Audio;
 import com.example.engine.Graphics;
 import com.example.engine.State;
 
-import java.awt.Color;
 import java.awt.image.BufferStrategy;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

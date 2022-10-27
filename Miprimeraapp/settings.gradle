@@ -2,3 +2,6 @@ rootProject.name = "Mi primera app"
 include ':Engine'
 include ':PCEngine'
 include ':AndroidEngine'
+include ':Nonograma'
+include ':androidapplication'
+include ':PCApplication'

@@ -1,5 +1,7 @@
 package com.example.pcengine;
 
+import com.example.engine.Graphics;
+
 public class State implements com.example.engine.State {
     @Override
     public void update() {
@@ -7,7 +9,7 @@ public class State implements com.example.engine.State {
     }
 
     @Override
-    public void render() {
+    public void render(Graphics g) {
 
     }
 }

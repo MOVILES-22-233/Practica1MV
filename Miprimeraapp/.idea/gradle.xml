@@ -12,7 +12,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AndroidEngine" />
             <option value="$PROJECT_DIR$/Engine" />
+            <option value="$PROJECT_DIR$/Nonograma" />
+            <option value="$PROJECT_DIR$/PCApplication" />
             <option value="$PROJECT_DIR$/PCEngine" />
+            <option value="$PROJECT_DIR$/androidapplication" />
           </set>
         </option>
       </GradleProjectSettings>
