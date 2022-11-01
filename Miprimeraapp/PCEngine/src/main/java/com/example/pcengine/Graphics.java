@@ -43,7 +43,17 @@ public class Graphics implements com.example.engine.Graphics {
 
     @Override
     public void setFont(Font font) {
-        //graphics.setFont((com.example.pcengine.Font)font).getFont());
+        java.awt.Font font_ = ((com.example.pcengine.Font)font).getFont();
+        graphics.setFont(font_);
+    }
+
+    public void setGraphics(java.awt.Graphics graphics_) {
+        graphics = graphics_;
+    }
+
+    public com.example.engine.Engine.Vector2 getDimensions() {
+        com.example.engine.Engine.Vector2 dimensions = new com.example.engine.Engine.Vector2(win.getX(), win.getY());
+        return dimensions;
     }
 
     @Override

@@ -62,7 +62,7 @@ public class MyRenderClass implements Runnable {
 
     }
 
-    public int getWidth(){
+    public int getWidth() {
         return this.myView.getWidth();
     }
 

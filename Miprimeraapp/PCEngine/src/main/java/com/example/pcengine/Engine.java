@@ -1,7 +1,6 @@
 package com.example.pcengine;
 
 import com.example.engine.Audio;
-import com.example.engine.Graphics;
 import com.example.engine.State;
 
 import java.awt.image.BufferStrategy;
@@ -30,6 +29,7 @@ public class Engine implements com.example.engine.Engine {
         input = new Input();
 
         myWin = new MyWindow("Nonograma", WIDTH, HEIGHT, input);
+        myWin.createBufferStrategy(2);
         bufferStrategy = myWin.getBufferStrategy();
 
         graphics = new com.example.pcengine.Graphics(myWin, this);
@@ -48,12 +48,18 @@ public class Engine implements com.example.engine.Engine {
 
     @Override
     public State getState() {
-        return state;
+        return null;
     }
 
     public InputStream readInputStream(String filename) throws FileNotFoundException {
         return new FileInputStream(filename);
     }
+
+    // METODOS DE AYUDA
+    public BufferStrategy GetBufferStrategy() {
+        return bufferStrategy;
+    }
+
 
     public class MyWindow extends JFrame {
         public MyWindow(String name, int width, int height, Input listener) {
