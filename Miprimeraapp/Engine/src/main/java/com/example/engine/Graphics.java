@@ -5,7 +5,6 @@ public interface Graphics {
     Font newFont(String filename, int size, boolean bold);
 
     void setResolution(int width, int height);
-    Engine.Vector2 getDimensions();
     void setColor(Engine.Color color);
     void setFont(Font font);
 

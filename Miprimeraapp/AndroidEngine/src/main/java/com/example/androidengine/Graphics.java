@@ -37,6 +37,11 @@ public class Graphics implements com.example.engine.Graphics {
     @Override
     public void setResolution(int width, int height) {
         // nose alv
+
+    }
+
+    public void setCanvas(Canvas canvas_) {
+        canvas = canvas_;
     }
 
     @Override

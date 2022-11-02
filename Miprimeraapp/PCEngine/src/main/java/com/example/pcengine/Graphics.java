@@ -51,11 +51,6 @@ public class Graphics implements com.example.engine.Graphics {
         graphics = graphics_;
     }
 
-    public com.example.engine.Engine.Vector2 getDimensions() {
-        com.example.engine.Engine.Vector2 dimensions = new com.example.engine.Engine.Vector2(win.getX(), win.getY());
-        return dimensions;
-    }
-
     @Override
     public void drawImage(Image image, int x, int y) {
         graphics.drawImage(((com.example.pcengine.Image)image).getImage(), x, y, null);

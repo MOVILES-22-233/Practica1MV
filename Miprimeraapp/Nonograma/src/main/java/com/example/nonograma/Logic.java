@@ -56,4 +56,8 @@ public class Logic {
         for (GameObject gameObject : gameObjects)
             gameObject.render(graphics);
     }
+
+    public void handleInput() {
+
+    }
 }
