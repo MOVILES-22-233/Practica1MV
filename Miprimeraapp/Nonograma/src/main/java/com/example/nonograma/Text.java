@@ -6,11 +6,13 @@ import com.example.engine.Graphics;
 
 public class Text extends GameObject implements Caller {
     private String text;
+    private String function;
     private Font font;
 
-    public Text (int x, int y, String text, Font font) {
+    public Text (int x, int y, String text, Font font, String function) {
         super(x, y, text.length() * font.getSize() - text.length() * 2, font.getSize() + font.getSize() / 2);
         this.text = text;
+        this.function = function;
         this.font = font;
     }
 
@@ -19,11 +21,15 @@ public class Text extends GameObject implements Caller {
 
     @Override
     public void render(Graphics graphics) {
-        graphics.setColor(new Engine.Color(255, 0, 0));
-        graphics.drawRectangle(getX(), getY(), getW(), getH());
+        //graphics.drawRectangle(getX(), getY() - getH(), getW(), getH());
         graphics.setFont(font);
         graphics.setColor(new Engine.Color(0, 0, 0));
         graphics.drawText(this.text, this.getX(), this.getY());
+    }
+
+    @Override
+    public void handleInput() {
+        
     }
 
     @Override
@@ -34,7 +40,7 @@ public class Text extends GameObject implements Caller {
     }
 
     @Override
-    public void handleInput() {
-
+    public String getFunction() {
+        return this.function;
     }
 }

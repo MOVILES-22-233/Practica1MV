@@ -6,6 +6,7 @@ import com.example.engine.Graphics;
 public class Cell {
     private  int x, y;
     private int side;
+    private int value;
 
     private Engine.Color currentColor;
 
@@ -14,6 +15,7 @@ public class Cell {
         y = posY;
         side = side_;
         currentColor = color;
+        value = 0;
     }
 
     public void render(Graphics graphics) {
@@ -30,4 +32,10 @@ public class Cell {
     public int getX() { return x; }
 
     public int getY() { return y; }
+
+    public int getValue() { return value; }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
 }

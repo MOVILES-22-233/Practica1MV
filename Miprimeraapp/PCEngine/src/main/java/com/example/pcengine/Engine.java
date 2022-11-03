@@ -51,6 +51,11 @@ public class Engine implements com.example.engine.Engine {
         return null;
     }
 
+    @Override
+    public com.example.pcengine.Input getInput() {
+        return input;
+    }
+
     public InputStream readInputStream(String filename) throws FileNotFoundException {
         return new FileInputStream(filename);
     }
@@ -59,6 +64,9 @@ public class Engine implements com.example.engine.Engine {
     public BufferStrategy GetBufferStrategy() {
         return bufferStrategy;
     }
+
+    public int getWidth() { return WIDTH; }
+    public int getHeight() { return HEIGHT; }
 
 
     public class MyWindow extends JFrame {

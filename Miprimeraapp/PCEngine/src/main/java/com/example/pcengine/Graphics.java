@@ -111,4 +111,27 @@ public class Graphics implements com.example.engine.Graphics {
     public void restore() {
         ((Graphics2D)graphics).setTransform(affineTransform);
     }
+
+    @Override
+    public com.example.engine.Engine.Vector2 adjustToWindow() {
+        translate(getWidth() / 2, getHeight() / 2);
+
+        float incX = (float)getWidth() / engine.getWidth();
+        float incY = (float)getHeight() / engine.getHeight();
+
+        if (engine.getWidth() * incY < getWidth()) {
+            scale((int)incY, (int)-incY);
+        }
+        else scale((int)incX, (int)-incX);
+
+        return new com.example.engine.Engine.Vector2(getWidth(), getHeight());
+    }
+
+    public int getWidth() {
+        return win.getWidth();
+    }
+
+    public int getHeight() {
+        return win.getHeight();
+    }
 }

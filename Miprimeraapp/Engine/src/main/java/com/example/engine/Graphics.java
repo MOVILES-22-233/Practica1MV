@@ -23,4 +23,6 @@ public interface Graphics {
     void scale(int x, int y);
     void save();
     void restore();
+
+    Engine.Vector2 adjustToWindow();
 }

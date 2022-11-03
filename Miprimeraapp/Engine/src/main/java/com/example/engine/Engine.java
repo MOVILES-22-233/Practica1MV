@@ -4,6 +4,7 @@ public interface Engine {
     Graphics getGraphics();
     Audio getAudio();
     State getState();
+    Input getInput();
 
     public class Vector2 {
         public int x, y;
